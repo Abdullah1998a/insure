@@ -1,0 +1,17 @@
+.menu {
+    @apply w-full h-[calc(100vh-72px)] absolute left-0 top-full p-6 flex flex-col items-center gap-10 md:gap-4 bg-[hsl(270,9%,17%)];
+    background-image: url("../../assets/images/bg-pattern-mobile-nav.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.menu.open {
+    @apply w-fit h-fit bg-transparent static flex-row p-0 m-0;
+    background-image: none;
+}
+.menu .link {
+    @apply text-white md:text-[hsl(216,30%,68%)] font-medium uppercase duration-200 md:hover:text-[hsl(256,26%,20%)] max-md:hover:opacity-80;
+}
+.menu .link.btn {
+    @apply text-white md:text-[hsl(256,26%,20%)] border-2 border-white md:border-[hsl(256,26%,20%)] py-2 px-4 hover:bg-white md:hover:bg-[hsl(256,26%,20%)] hover:text-[hsl(256,26%,20%)] md:hover:text-white max-md:hover:opacity-100;
+}

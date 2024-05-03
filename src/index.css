@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "karla";
+  src: url("./assets/fonts/karla.ttf");
+}
+@font-face {
+  font-family: "dm-serif";
+  src: url("./assets/fonts/dm-serif-display-regular.ttf");
+}
+::-webkit-scrollbar {
+  @apply hidden;
+}
+body {
+  @apply font-karla;
+}
+body.stop-scrolling {
+  @apply overflow-hidden;
+}
+@layer base {
+  .btn {
+    @apply border-[1.5px] px-6 py-[0.45rem] text-white uppercase;
+  }
+}
